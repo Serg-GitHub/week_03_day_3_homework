@@ -15,10 +15,10 @@
     <body>
     <img src="https://woodlibrary.org/wp-content/uploads/2019/05/Book-Sale.png">   
         <div class="container">
-        <h1>My Second Order!</h1>
+        <h1>Second Order</h1>
 
         <ul>
-            <li><a href="/">Go Back to My First Order!</a>
+            <li><a href="/">Click here to go back to the first order!</a>
     
 
         </ul>
@@ -26,8 +26,34 @@
         {% for order in order_1 %}
         
             <p>{{order.name}}: <b> {{ order. date}}</b> {{ order.quantity}} {{ order.title}} {{ order.description}}</p>
-        </div>
+        
 
       {% endfor %}
+
+    </div>
     </body>
+
+    <div class="container">
+        <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Sign up to our monthly book giveaway competition!</title>
+      </head>
+      <body>
+          
+          
+        <form action="/form/submit" method="get">
+            <div class="container p-3 my-3 bg-primary text-white">
+                <h3>Sign up to our monthly book giveaway!</h3>
+                <p>To enter simply enter your email address below.</p>
+              </div>
+              
+              </body>
+              </html>
+          <input type="email" name="user_email" placeholder="Enter your email" />
+          <input type="submit" value="Submit" />
+        </form>
+      </body>
+    </html>
+    </div>
 </html>

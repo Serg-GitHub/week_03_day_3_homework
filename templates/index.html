@@ -14,23 +14,29 @@
 
 </head>
     <body>
+        
     <img src="https://woodlibrary.org/wp-content/uploads/2019/05/Book-Sale.png">   
         <div class="container">
 
            
         <h1>First Order</h1>
-         <ul>
-                <li><a href="/order">Check out our  order!</a>
-        
-
-            </ul>
+         
         {% for order in order %}
         
             <p>{{order.name}}: <b> {{ order.date}}</b> {{ order.quantity}} {{ order.title}} {{ order.description}}</p>
        
         {% endfor %}
-    </div> 
 
+        <ul>
+            <li><a href="/order">Check out the second order!</a>
+
+
+        </ul>
+
+
+
+    </div> 
+           
     <div class="container">
     <!DOCTYPE html>
 <html>
